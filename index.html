@@ -35,7 +35,7 @@
       }
       /* Pre-define background to prevent flash before Tailwind loads */
       html.dark body {
-        background-color: #111111;
+        background-color: #1e293b; /* Blue-Grey  initial was #111111, others options are #1c1917, #0f172a*/ 
         color: #e2e8f0;
       }
       /* Custom scrollbar for a sleeker look */
@@ -63,10 +63,10 @@
               sans: ['Inter', 'sans-serif'],
             },
             colors: {
-              primary: '#111111', // Deep Charcoal/Black
+              primary: '#1e293b', // Updated to Blue-Grey (was #111111)
               accent: '#d4af37',  // Metallic Gold/Bronze
               paper: '#ffffff',   // Pure White
-              'dark-paper': '#1a1a1a', // Soft Black
+              'dark-paper': '#0f172a', // Slightly lighter zinc for cards (was #1a1a1a)
               'subtle-gray': '#f4f4f5'
             },
             borderRadius: {
@@ -84,23 +84,22 @@
       }
     </script>
 
-<link rel="stylesheet" href="/index.css">
 <script type="importmap">
 {
   "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
-    "katex": "https://aistudiocdn.com/katex@^0.16.25",
-    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
     "vite": "https://aistudiocdn.com/vite@^7.2.6",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "katex": "https://aistudiocdn.com/katex@^0.16.25"
   }
 }
 </script>
-  <script type="module" crossorigin src="/sd/assets/index-f0jcAeEM.js"></script>
+  <script type="module" crossorigin src="/sd/assets/index-DOCNkRXq.js"></script>
 </head>
   <body class="bg-paper text-slate-800 dark:bg-primary dark:text-slate-200 transition-colors duration-500 selection:bg-accent selection:text-white">
     <div id="root"></div>
